@@ -41,7 +41,7 @@ hostname {router["hostname"]}
 !
 192.168.{router["netID"]}.0
 !
-intetface gi0/{router["interfaceID"]}"""
+interface gi0/{router["interfaceID"]}"""
     
     # Write it out to commandLine
     print(config)
