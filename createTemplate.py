@@ -1,6 +1,6 @@
 import os, sys
 
-# Set up env
+# Set up enviornment
 path="/Users/belser/python/configs"
 if not os.path.exists(path):
     print("Creating %s" % path)
@@ -34,7 +34,7 @@ devices = {
 for router in devices["routers"]:
     configFileName=f"""{path}/{router["hostname"]}.txt"""
     
-    # Example of static config inkline using string expansion to edit 
+    # Example of static config inline using string expansion to edit 
     config=f"""conft
 !
 hostname {router["hostname"]} 
